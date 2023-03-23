@@ -17,13 +17,13 @@ public class BunParameterizedTest {
         this.price = price;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}: {1}")
     public static Object[][] getBuns() {
         return new Object[][]{
                 {"Флюоресцентная булка R2-D3", 988.025f},
                 {"Краторная булка N-200i", 1255},
                 {"Неподъемная", 0.001f},
-                {"Огромная", -3}
+                {"Огромная", -988}
         };
     }
 
