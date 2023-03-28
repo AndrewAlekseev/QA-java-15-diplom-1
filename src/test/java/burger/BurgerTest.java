@@ -1,8 +1,6 @@
-package Burger;
+package burger;
 
 
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -10,13 +8,12 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.*;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
+    @Mock
+    Burger burger;
     @Mock
     Bun bun;
     @Mock
@@ -25,7 +22,6 @@ public class BurgerTest {
     @Test
 
     public void addIngredientTest() {
-        Burger burger = new Burger();
         burger.addIngredient(ingredient);
         assertTrue(burger.ingredients.size() != 0);
     }

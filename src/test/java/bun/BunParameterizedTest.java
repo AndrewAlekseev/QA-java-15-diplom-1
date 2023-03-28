@@ -1,4 +1,4 @@
-package Bun;
+package bun;
 
 import org.junit.Assert;
 import org.junit.Test;
